@@ -27,7 +27,7 @@ docker run -d \
   --name juno \
   -p 6060:6060 \
   -v $HOME/juno:/var/lib/juno \
-  nethermind/juno \
+  nethermind/juno:latest \
   --http \
   --http-port 6060 \
   --http-host 0.0.0.0 \
@@ -96,7 +96,7 @@ Use the provided snapshots to quickly sync your Juno node with the current state
      --name juno \
      -p 6060:6060 \
      -v $HOME/snapshots/juno_mainnet:/var/lib/juno \
-     nethermind/juno \
+     nethermind/juno:latest \
      --http \
      --http-port 6060 \
      --http-host 0.0.0.0 \
