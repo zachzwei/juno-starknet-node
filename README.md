@@ -47,19 +47,18 @@
 
 - Golang 1.20 or higher is required to build and run the project. You can find the installer on
   the official Golang [download](https://go.dev/doc/install) page.
+- Docker Engine (https://docs.docker.com/engine/install/)
 - [Rust](https://www.rust-lang.org/tools/install).
 - A C compiler: `gcc` or `clang`.
+- Lava account (https://gateway.lavanet.xyz/)
+- Lava points (optional) (https://points.lavanet.xyz/register?code=3HAC1)
 
-### Build and Run
+### Run with Docker using Lava ETH RPC
 
-```shell
-make juno
-./build/juno
-```
-Use the `--help` flag for configuration information.
-Flags and their values can also be placed in a `.yaml` file that is passed in through `--config`.
-
-### Run with Docker
+#### Note:
+The steps below will run your node and download the snapshot from block 0. The sync will take a while to complete. 
+Proceed with the instructions below on how to download a snapshot first before running your node.
+==========
 
 To run Juno with Docker, use the following command. Make sure to create the `$HOME/juno` directory on your local machine before running the command.
 
@@ -76,9 +75,9 @@ docker run -d \
   --eth-node <YOUR-ETH-NODE>
 ```
 
-You should replace `<YOUR-ETH-NODE> `with your actual Ethereum node address.
-If you're using Infura, your Ethereum node address might look something like: `wss://mainnet.infura.io/ws/v3/your-infura-project-id`.
-Make sure you are using the websocket URL `ws`/`wss` and not the http URL `http`/`https`.
+Replace `<YOUR-ETH-NODE> `with your own ETH endpoint from Lava.
+
+<img width="898" alt="image" src="https://github.com/zachzwei/juno-starknet-node/assets/35627271/df213c6b-dcc1-40e3-928b-863aafdb7075">
 
 To view logs from the Docker container, use the following command:
 
