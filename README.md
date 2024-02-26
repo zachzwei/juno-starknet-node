@@ -60,6 +60,7 @@
 ```
 The steps below will run your node and download the snapshot from block 0. The sync will take a while to complete.
 Proceed with the instructions below on how to download a snapshot first before running your node.
+```
 ==========
 
 To run Juno with Docker, use the following command. Make sure to create the `$HOME/juno` directory on your local machine before running the command.
