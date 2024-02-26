@@ -1,46 +1,3 @@
-<p align="center">
-  <a href="https://github.com/NethermindEth/juno">
-    <img alt="Juno Logo" height="125" src="./.github/Juno_Light.png">
-  </a>
-  <br>
-</p>
-
-<p align="center">
-  <a href="https://pkg.go.dev/github.com/NethermindEth/juno">
-    <img src="https://pkg.go.dev/badge/github.com/NethermindEth/juno.svg">
-  </a>
-  <a href="https://goreportcard.com/report/github.com/NethermindEth/juno">
-    <img src="https://goreportcard.com/badge/github.com/NethermindEth/juno">
-  </a>
-  <a href="https://github.com/NethermindEth/juno/actions">
-    <img src="https://github.com/NethermindEth/juno/actions/workflows/juno-test.yml/badge.svg">
-  </a>
-  <a href="https://codecov.io/gh/NethermindEth/juno">
-    <img src="https://codecov.io/gh/NethermindEth/juno/branch/main/graph/badge.svg">
-  </a>
-
-</p>
-<p align="center">
-  <a href="https://discord.gg/TcHbSZ9ATd">
-    <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
-  </a>
-  <a href="https://twitter.com/NethermindStark">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
-  </a>
-  <a href="https://t.me/+skAz9cUvo_AzZWM8">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white">
-  </a>
-</p>
-
-
-<p align="center">
-  <b>Juno</b> is a golang <a href="https://starknet.io/">Starknet</a> node implementation by <a href="https://nethermind.io/">Nethermind</a> with the aim of decentralising Starknet.
-</p>
-
-> **📌 Looking for a Starknet RPC Provider?**
->
-> Access Nethermind's Starknet RPC service for free at https://data.voyager.online.
-
 ## ⚙️ Installation
 
 ### Prerequisites
@@ -65,7 +22,7 @@ Proceed with the instructions below on how to download a snapshot first before r
 
 To run Juno with Docker, use the following command. Make sure to create the `$HOME/juno` directory on your local machine before running the command.
 
-```shell
+```
 docker run -d \
   --name juno \
   -p 6060:6060 \
@@ -84,7 +41,7 @@ Replace `<YOUR-ETH-NODE> `with your own ETH endpoint from Lava.
 
 To view logs from the Docker container, use the following command:
 
-```shell
+```
 docker logs -f juno
 ```
 
